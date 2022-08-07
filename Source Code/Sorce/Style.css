@@ -14,6 +14,7 @@
     width: 5%;
     margin-right: 10px;
 }
+
 #home_icon img:hover {
     border: 3px;
     background-color: #f44336;
@@ -90,12 +91,14 @@
     list-style: none;
     text-decoration: none;
 }
-#nav_contant > ul > li > a {
+
+#nav_contant>ul>li>a {
     text-decoration: none;
 
 }
-#nav_contant > ul > li > a  :hover{
-    background-color: #f44336;
+
+#nav_contant>ul>li>a :hover {
+    background-color: #ff1e1ee7;
     border-radius: 15px;
 }
 
@@ -166,6 +169,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+
 }
 
 .Main_About {
@@ -181,19 +186,32 @@
     height: 100%;
     left: 37%;
     position: absolute;
-    background-color: rgba(192, 218, 240, 0.321);
-    padding: 10px;
-    object-fit: cover;
+    background-image: url(./Pic/colors_mix.png);
+    opacity: 0.5;
+    background-position: top;
+    background-size: 200%;
+    transition: background-position 10s;
 
+    padding: 10px;
+    object-fit: 300%;
+
+}
+
+.Main_text:hover {
+    background-position: right;
 }
 
 .Main_text h1,
 .Main_text h4 {
+
     font-size: 1em;
+    font-weight: bold;
+    opacity: 1;
 }
 
 .Main_text_contant {
-
+    font-weight: bolder;
+    opacity: 1;
     margin-top: 20%;
     padding-left: 5%;
     position: sticky;
@@ -240,7 +258,7 @@
 }
 
 .button_contact:hover {
-    background-color: #f44336;
+    background-color: #0916a3c9;
     color: white;
 }
 
@@ -303,28 +321,24 @@
     border: 2px solid;
     background-color: #0000008e;
     color: white;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
-.QBox img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    border-radius: 10px;
-    width: 98%;
-    height: 98%;
-}
 
-.QBox img:hover {
-    display: none;
-    color: rgb(191, 255, 0);
+
+.QBox:hover {
+    color: rgb(255, 255, 255);
+    background-color: #0000008b;
+    width: 170px;
+    height: 340;
+    box-shadow: 10px 10px 5px rgb(36, 245, 203);
+
 
 }
 
-.QBox h5 {
-    margin-top: 20%;
-    margin-left: 5%;
-}
+
+
 
 /* End of Main Box Styleing  */
 /*Start of Back to Top stayling */
@@ -402,7 +416,8 @@ footer ul li {
     list-style: none;
 
 }
-body > footer > ul > li  > a {
+
+body>footer>ul>li>a {
     text-decoration: none;
 
 }
@@ -533,15 +548,15 @@ body > footer > ul > li  > a {
 
 /* Start of Contact_Me */
 .Main_Contact_Me {
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 12px;
-    border: 2px dashed;
-    border-top: none;
-   
+    background-image: url(./Pic/colors_mix2.png);
     display: flex;
     flex-wrap: wrap;
-
+    transition: background-position 22s;
+    background-position: top;
+    background-size: 110%;
 
 }
 
@@ -562,23 +577,25 @@ body > footer > ul > li  > a {
 }
 
 .CBox {
-
+    color:white;
+   
+    background-color: rgba(64, 92, 137, 0.568);
+    margin-top: 7%;
     margin-bottom: 40px;
     width: 370px;
     height: 250px;
-    background-image: url(./Pic/colors_mix.png);
-    background-position: top;
-    background-size: 200%;
-    transition: background-position 12s;
     text-align: center;
     padding-top: 20px;
-    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
-
-.CBox:hover {
+.CBox:hover{
+    box-shadow: 10px 10px 150px rgba(127, 255, 67, 0.73);
+}
+.Main_Contact_Me:hover {
     background-position: bottom;
 }
+
 /* Form Stayling Start */
 .Form_Data {
 
@@ -626,6 +643,7 @@ body > footer > ul > li  > a {
     background-color: #000000;
     color: white;
 }
+
 /* Form Stayling End */
 .CBox img {
     width: 90%;
@@ -637,9 +655,10 @@ body > footer > ul > li  > a {
 .Saying {
     display: flex;
     margin: auto;
+    margin-top: 7%;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- 
+
 }
 
 .Saying p span {
@@ -755,6 +774,7 @@ body > footer > ul > li  > a {
         width: 22%;
         height: 15%;
     }
+
     .carousel-item img {
         height: 350px;
         object-fit: fill;
@@ -785,8 +805,8 @@ body > footer > ul > li  > a {
         height: 17%;
     }
 }
-@media only screen and (max-width:590px)
-{
+
+@media only screen and (max-width:590px) {
 
     .QBox {
         width: 177px;
@@ -797,17 +817,19 @@ body > footer > ul > li  > a {
         position: relative;
         border: 2px solid;
 
-       
+
     }
-    .QBox img{
+
+    .QBox img {
         border-radius: 10px;
         width: 95%;
         height: 95%;
         margin-top: 7px;
         margin-left: 4px;
-     
-       
+
+
     }
+
     .carousel-item img {
         height: 300px;
         object-fit: fill;
@@ -819,11 +841,12 @@ body > footer > ul > li  > a {
     .Main_text_contant {
         font-size: .6em;
     }
-    #nav_contant > ul > li > a > h6{
+
+    #nav_contant>ul>li>a>h6 {
         font-size: .7em;
-        
+
     }
- 
+
     .button_contact {
         width: 30%;
         height: 12%;
@@ -835,6 +858,7 @@ body > footer > ul > li  > a {
         font-size: .8em;
         font-weight: bold;
     }
+
     .carousel-item img {
         height: 280px;
         object-fit: fill;
